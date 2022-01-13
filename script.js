@@ -3,22 +3,25 @@
 // and include different parameters such as: letters, numbers, and special characters. 
 
 // Global Variables
-const letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+const lowerLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+const upperLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 const nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 const specialChars = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", "\:", "\;", " < ", "=", " > ", " ? ", "@", "[", "\\", "]", " ^ ", "_", "`", "{", "|", "}", "~"];
+const possibleList = [] // a blank list to pull from. 
 var passLength;
 // Below are the undefined bools that will return false
 var confirmUpperCase;
 var confirmlowerCase;
 var confirmNums;
+var confirmSpecialChars;
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
-
 
 // Write password to the #password input
 function writePassword() {
     // User input (parseInt allows use to store this as a integer instead of string)
     passLength = parseInt(prompt("Pick password length from 8 to 128"));
+    // Conditionals to ensure password is an appropriate length. 
     if (!passLength) { // parseInt returns nothing or falesy if not an int 
         alert("Last chance! Pick a value that is a number")
     } else if (passLength <= 8 || passLength >= 128) {
