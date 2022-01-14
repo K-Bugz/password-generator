@@ -5,7 +5,6 @@
 You need a password, I have got you buddy!
 
 ![picture of deployed site](images/rmIMG1.png)
-![picture of deployed site](images/rmIMG2.png)
 
 <!-- Links to your social media accounts -->
 ## Contact Me
