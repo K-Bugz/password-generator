@@ -2,7 +2,7 @@
 
 ## Description
 
-You need a password, I have got you buddy!
+You need a password, I have got you! This password generator allows you to pick parameters and length. 
 
 ![picture of deployed site](images/rmIMG1.png)
 
