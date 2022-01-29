@@ -12,6 +12,7 @@ K-Bugz secure password generator with editable parameter setting. You need a pas
 
 ## Credits
 UT Austin Coding Boot Camp https://techbootcamps.utexas.edu/coding/
+
 Stack Overflow https://stackoverflow.com/
 
 <!-- Links to your social media accounts -->
