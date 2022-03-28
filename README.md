@@ -8,6 +8,18 @@ K-Bugz secure password generator with editable parameter setting. You need a pas
 
 🏗️ The provided starter code took care of the basic process of rendering whatever text I wanted to generate in my generatePassword() function, but that was about it. Aside from a couple variables, an undeclared function, an event listener, and a few query selectors there was nothing provided in the way of actually generating the password.
 
+The goal was to create a password given a certain set of critera such as
+                            lettercases, numerics and special characters. I wrote this program using HTML, CSS, and JS.
+                            The program works by adding an event listner that looks for a click and if so start a
+                            function to get the logic going. I created global arrays for lowercase, uppercase, numerics
+                            and special cases. I also created a string blank password and blank array waiting to recieve
+                            the prior arrays. Then used corresponding booleans with confirm for logic to insert or
+                            concatenate onto the blank array. Also, prompt the user for password size that allows from 8
+                            to 128 chars. When confim is selected yes then it triggers the boolean to trueAt then end of
+                            that function, I use the join function to turn an array into a string to present the very
+                            nice password. Finally, I use querySelector to grab the html element and populate with
+                            string.
+
 ![picture of deployed site](images/rmIMG1.png)
 
 ## Credits
